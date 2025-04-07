@@ -1,0 +1,19 @@
+# Testa il server con una richiesta GET
+GET http://localhost:3000/api/users
+
+###
+
+# Crea un nuovo utente con una richiesta POST
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+  "name": "zuzu.3pf",
+  "email": "zuz.haida@ex22222ample.com",
+  "password": "shishkeb22222ab"
+}
+
+###
+
+# Ottieni un utente specifico per ID
+GET http://localhost:3000/api/users/7
